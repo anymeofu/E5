@@ -8,7 +8,6 @@ import json,sys,time
 #After registration, you must click on behalf of xxx to grant administrator consent, otherwise outlook api cannot be called
 #path=sys.path[0]+r'/Secret.txt'
 num1 = 0
-
 def gettoken(refresh_token):
     headers={'Content-Type':'application/x-www-form-urlencoded'
             }
