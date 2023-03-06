@@ -6,8 +6,16 @@ import json,sys,time
 #user:	User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All
 #mail:  Mail.Read、Mail.ReadWrite、MailboxSettings.Read、MailboxSettings.ReadWrite
 #After registration, you must click on behalf of xxx to grant administrator consent, otherwise outlook api cannot be called
+
+
+
+
+
+
+
 #path=sys.path[0]+r'/Secret.txt'
 num1 = 0
+
 def gettoken(refresh_token):
     headers={'Content-Type':'application/x-www-form-urlencoded'
             }
