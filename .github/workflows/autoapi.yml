@@ -16,7 +16,7 @@ on:
    
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: (github.event.repository.owner.id == github.event.sender.id) || ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}  # Self-ordered start
     #if: github.event.repository.owner.id == github.event.sender.id  # Self-ordered start
     name: Build and call API
@@ -29,7 +29,7 @@ jobs:
     - name: Set up Python #Install python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10
+        python-version: 3.9
         check-latest: true
     - name: Install requests #Installation requests
       run: |
